@@ -99,7 +99,7 @@ def merge_db_files(source_folder, output_db='merged_database.db'):
 
 if __name__ == "__main__":
     # Example usage
-    source_folder = ""  # Change to your folder path
+    source_folder = "/database"  # Change to your folder path
     output_database = "merged_database.db"  # Change to your desired output file name
 
     merge_db_files(source_folder, output_database)
