@@ -220,6 +220,25 @@ h4 { color: #555; font-size: 15px; margin: 25px 0 10px 0; font-weight: 600; }
 </style>
 
 <h3>Quantitative Analysis Results</h3>
+
+<h4>Metric Definitions</h4>
+<p>
+  We report the following quantitative metrics for each curated group. All metrics are computed from the AIDev pull request data and GitHub mining results.
+</p>
+<ul>
+  <li><code>time_to_close_hours</code> — Time between PR creation and closing (merged or closed) measured in hours.</li>
+  <li><code>time_to_close_days</code> — The same closing time interval expressed in days.</li>
+  <li><code>body_length</code> — Length of the PR description body, measured as the number of characters in the text.</li>
+  <li><code>commits</code> — Total number of commits associated with the pull request.</li>
+  <li><code>changed_files</code> — Number of files that were changed (added, modified, or deleted) in the PR.</li>
+  <li><code>additions</code> — Total number of added lines across all changed files in the PR.</li>
+  <li><code>deletions</code> — Total number of removed lines across all changed files in the PR.</li>
+  <li><code>code_churn</code> — Sum of <code>additions</code> and <code>deletions</code>, used for overall change size.</li>
+  <li><code>review_iterations</code> — Number of distinct review rounds for the PR, approximated from the sequence of review events and states.</li>
+  <li><code>total_comments</code> — Total count of review comments and general PR comments linked to the pull request.</li>
+  <li><code>reviewer_workload_hours</code> — An measure of reviewer workload.</li>
+</ul>
+
 <div class="tables-wrap">
 
   <h4>Human-created Curated PRs vs. Purely Human PRs <a href="Data/Quantitative analysis results/curated_human_created_purely_human.csv" class="csv-link" download>📥 Download CSV</a></h4>
