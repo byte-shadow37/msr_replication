@@ -113,7 +113,7 @@ and requires understanding the broader project structure.
                 <li>
                     <code>compare_pr_metrics.py</code> — Compare PR metrics between human, hybrid, and agent groups using Mann–Whitney U tests and effect size calculations. Generates comparison tables, summary CSVs, and plots for statistical analysis.<br>
                     First, run <code>get_pr_metrics.py</code> twice (once for each PR group) to generate two metrics files. Then use those files as inputs:<br>
-                    <em>Run:</em> <code>python compare_pr_metrics.py --file-a curated_human_created_metrics.csv --file-b pure_human_metrics.csv</code>
+                    <em>Run:</em> <code>python compare_pr_metrics.py --file-a curated_human_created_metrics.csv --file-b pure_human_metrics.csv --label-a Curated_pr --label-b Pure_human</code>
                 </li>
 			</ul>
 
@@ -236,7 +236,7 @@ h4 { color: #555; font-size: 15px; margin: 25px 0 10px 0; font-weight: 600; }
   <li><code>code_churn</code> — Sum of <code>additions</code> and <code>deletions</code>, used for overall change size.</li>
   <li><code>review_iterations</code> — Number of distinct review rounds for the PR, approximated from the sequence of review events and states.</li>
   <li><code>total_comments</code> — Total count of review comments and general PR comments linked to the pull request.</li>
-  <li><code>reviewer_workload_hours</code> — An measure of reviewer workload.</li>
+  <li><code>reviewer_workload_hours</code> — Approximate reviewer response time, measured as the average number of hours between when reviewers are requested to review a PR and when they submit their reviews.</li>
 </ul>
 
 <div class="tables-wrap">
